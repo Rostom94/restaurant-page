@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+#content {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 89vh;
+  gap: 15px;
+  align-items: center;
+  justify-items: center;
+}
+
+.content-container {
+  grid-area: 1/2/2/3;
+}
+
+img {
+  height: 100%;
+}
+
+.img-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+h3,
+p {
+  line-height: 50px;
+}
+
+p {
+  font-family: Ojuju;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+h3 {
+  font-family: "Open sans";
+  color: #004d7d;
+}
+
+/* nav section */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: #e4fbff;
+}
+/* buttons nav */
+
+.btn {
+  font-family: "Open sans";
+  height: 40px;
+  width: 140px;
+  color: white;
+  background-color: #00aac5;
+  border: none;
+  text-transform: uppercase;
+  padding: 12px 25px;
+  &:hover {
+    cursor: pointer;
+  }
+}
